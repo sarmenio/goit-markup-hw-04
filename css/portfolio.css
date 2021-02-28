@@ -57,6 +57,7 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    outline: none;
     }
 
 .logo:not(:last-child) {
@@ -195,6 +196,7 @@
     font-size: 16px;
     line-height: 2.32;
     letter-spacing: 0.03em;
+    outline: none;
 }
 
 .frame-button {
@@ -278,7 +280,6 @@
 .ourprojects-link:hover,
 .ourprojects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
 
 
@@ -360,45 +361,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-.h3-color {
+    fill: var(--card-background);
+    }
+    
+    
+    .h3-color {
     color: var(--white-text);
     margin: 0;
     padding-bottom: 20px;
     font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-font-weight: 700;
-}
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    }
+    
+    .socialnets-footer {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .joinus {
+        margin-left: 70px;
+        max-width: 206px;
+    }
+    
+    
+    .joinus-link {
+        outline: none;
+    }
+    
+    .socialnets-footer > li:not(:first-child) {
+            margin-left: 10px;
+    }
+    
+    .joinus-link:hover .thumb-socialnets-footer {
+        background-color: var(--blue-text-button);
+    }
+    
+    .joinus-link:focus .thumb-socialnets-footer {
+        background-color: var(--blue-text-button);
+    }
 
-.socialnets-footer {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.joinus {
-    margin-left: 70px;
-    max-width: 206px;
-}
-
-.socialnets-white {
-    fill: var(--card-background);
-}
-
-.socialnets-footer > li:not(:first-child) {
-        margin-left: 10px;
-}
-
-.thumb-socialnets-footer:hover,
-.thumb-socialnets-footer:focus {
-    background-color: var(--blue-text-button);
-}
-
-.clients-thumb:hover,
-.clients-thumb:focus {
-    fill: var(--blue-text-button);
-    border: 1px solid var(--blue-text-button);
-}
