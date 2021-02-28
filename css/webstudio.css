@@ -63,7 +63,7 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    
+    outline: none;
 }
 
 .logo:not(:last-child) {
@@ -118,6 +118,7 @@
 
 .link-title a:visited {
     color: var(--visited-text);
+    font-weight: 300;
 }
 
 .link-title-studio .current {
@@ -158,11 +159,12 @@
 .link-contacts a:hover,
 .link-contacts a:focus {
     color: var(--blue-text-button);
-   }
+}
 
 
 .link-contacts a:visited {
     color: var(--visited-text);
+    font-weight: 300;
 }
 
 
@@ -215,6 +217,7 @@
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
+    outline: none;
 }
 
 .button:active {
@@ -416,26 +419,27 @@
     margin-left: 32px;
 }
 
-.thumb-socialnets:hover,
-.thumb-socialnets:focus {
-    border-radius: 50%;
-    background-color: var(--blue-text-button);
-}
-
-
 .social-icon {
     fill: currentColor;
 }
 
 .social-link {
-    color: var(--border-ourclients); 
+    color: var(--border-ourclients);
+    outline: none;
 }
 
-.social-link:hover,
-.social-link:focus {
+
+.social-link:hover .thumb-socialnets {
+    border-radius: 50%;
+    background-color: var(--blue-text-button);
     color: var(--white-text);
 }
 
+.social-link:focus .thumb-socialnets {
+    border-radius: 50%;
+    background-color: var(--blue-text-button);
+    color: var(--white-text);
+}
 
 /* СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ*/
 
@@ -488,7 +492,21 @@
      /* align-content: center; */
      justify-content: center;
     }
-    
+
+.client-link {
+    outline: none;
+}
+
+.client-link:hover .clients-thumb {
+    fill: var(--blue-text-button);
+    border: 1px solid var(--blue-text-button);
+}
+
+.client-link:focus .clients-thumb {
+    fill: var(--blue-text-button);
+    border: 1px solid var(--blue-text-button);
+}
+
 
 /* футер адрес */
 .footer {
@@ -559,22 +577,23 @@
 /* ПРИСОЕДИНЯЙТЕСЬ */
 
 .thumb-socialnets-footer {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--background-socialnets);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: var(--background-socialnets);
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: var(--card-background);
 }
 
 
 .h3-color {
-    color: var(--white-text);
-    margin: 0;
-    padding-bottom: 20px;
-    font-size: 14px;
+color: var(--white-text);
+margin: 0;
+padding-bottom: 20px;
+font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 font-weight: 700;
@@ -591,21 +610,20 @@ font-weight: 700;
     max-width: 206px;
 }
 
-.socialnets-white {
-    fill: var(--card-background);
+
+.joinus-link {
+    outline: none;
 }
 
 .socialnets-footer > li:not(:first-child) {
         margin-left: 10px;
 }
 
-.thumb-socialnets-footer:hover,
-.thumb-socialnets-footer:focus {
+.joinus-link:hover .thumb-socialnets-footer {
     background-color: var(--blue-text-button);
 }
 
-.clients-thumb:hover,
-.clients-thumb:focus {
-    fill: var(--blue-text-button);
-    border: 1px solid var(--blue-text-button);
+.joinus-link:focus .thumb-socialnets-footer {
+    background-color: var(--blue-text-button);
 }
+
